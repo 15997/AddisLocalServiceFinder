@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../core/app_theme.dart'; 
 import '../widgets/service_card.dart';  
-        // FIX: Imports your Teal and Orange colors
+   
 
 class ChatbotScreen extends StatefulWidget {
   const ChatbotScreen({super.key});
@@ -58,7 +58,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
             child: Container(
               padding: const EdgeInsets.all(12),
               decoration: const BoxDecoration(
-                color: Color(0xFFE0F2F1), // Soft teal background
+                color: Color(0xFFE0F2F1), 
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(15),
                   bottomLeft: Radius.circular(15),
@@ -124,7 +124,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
             ),
             const SizedBox(width: 10),
             CircleAvatar(
-              backgroundColor: AppTheme.accentOrange, // Uses your Orange color
+              backgroundColor: AppTheme.accentOrange, 
               child: IconButton(
                 icon: const Icon(Icons.send, color: Colors.white, size: 18),
                 onPressed: () {},
