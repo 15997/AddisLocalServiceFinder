@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import '../core/app_theme.dart';
-
-// Import your sub-pages here
-import 'provider_dashboard.dart';      // Tab 1
-import 'provider_profile_screen.dart'; // Tab 2 (The Editor from Figure 4)
-import 'provider_reviews_tab.dart';    // Tab 3 (Ratings & Reviews)
-import 'provider_profile_tab.dart';    // Tab 5 (The Menu with Settings/Logout)
+import 'provider_dashboard.dart';      
+import 'provider_profile_screen.dart'; 
+import 'provider_reviews_tab.dart';    
+import 'provider_profile_tab.dart';   
 
 class ProviderMainScreen extends StatefulWidget {
   const ProviderMainScreen({super.key});
@@ -17,7 +15,7 @@ class ProviderMainScreen extends StatefulWidget {
 class _ProviderMainScreenState extends State<ProviderMainScreen> {
   int _selectedIndex = 0;
 
-  // This list matches the icons in your Figure 4 screenshot
+ 
   final List<Widget> _pages = [
     const ProviderDashboard(),        // Index 0: Dashboard
     const ProviderProfileScreen(),    // Index 1: Services (The Editor)
@@ -40,7 +38,7 @@ class _ProviderMainScreenState extends State<ProviderMainScreen> {
         children: _pages,
       ),
       
-      // BOTTOM NAVIGATION BAR (Matches your Figure 4)
+      // BOTTOM NAVIGATION BAR 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
