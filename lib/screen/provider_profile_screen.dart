@@ -65,7 +65,7 @@ class _ProviderProfileScreenState extends State<ProviderProfileScreen> {
                     backgroundImage: NetworkImage('https://via.placeholder.com/150'),
                   ),
                   const SizedBox(height: 10),
-                  // FIX: Corrected the quote here
+                  
                   const Text("", 
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                   Row(
@@ -215,5 +215,5 @@ class _ProviderProfileScreenState extends State<ProviderProfileScreen> {
         ],
       ),
     );
-  } // FIX: Added missing closing brace for the method
-} // FIX: Added missing closing brace for the class
+  } 
+}
